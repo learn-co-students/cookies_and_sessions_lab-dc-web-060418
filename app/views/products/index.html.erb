@@ -1,9 +1,9 @@
-
 <ul>
-    <% cart.each do |product|%>
-      <li><%= product %></li>
-    <%end%>
+  <%= cart.each do |product| %>
+    <li><%= product %></li>
+  <% end %>
 </ul>
+
 
 <%= form_tag "/", method: "post" do %>
 <%= label_tag "product" %>
